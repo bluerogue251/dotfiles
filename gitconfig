@@ -1,0 +1,14 @@
+[user]
+	name = Teddy Widom
+	email = theodore.widom@gmail.com
+[core]
+	autocrlf = false
+	safecrlf = true
+[alias]
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  	type = cat-file -t
+  	dump = cat-file -p
+[color]
+	ui = true
+[push]
+	default = simple
