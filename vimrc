@@ -31,7 +31,7 @@ noremap cp yap<S-}>p
 
 let g:rspec_command = "!clear && echo {spec} && time rspec {spec}"
 syntax on
-set background=dark
+set background=light
 set t_Co=16
 autocmd QuickFixCmdPost *grep* cwindow
 
