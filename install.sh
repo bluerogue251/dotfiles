@@ -1,5 +1,9 @@
 #!/bin/bash
 
+git submodule init
+git pull --recurse-submodules
+git submodule update --recursive
+
 dir=`pwd`
 files_to_link="bashrc gemrc gitconfig gitignore rspec vim vimrc"
 
