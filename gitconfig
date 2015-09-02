@@ -11,8 +11,9 @@
 
         aa = add -A
         cb = checkout -b
-        co = checkout
         ci = commit
+        co = checkout
+        cm = checkout --master
         st = status
         dc = diff --cached
 [color]
