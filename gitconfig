@@ -4,6 +4,7 @@
 [core]
 	autocrlf = false
 	safecrlf = true
+	excludesfile = ~/.gitignore
 [alias]
 	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
   	type = cat-file -t
@@ -13,7 +14,7 @@
         cb = checkout -b
         ci = commit
         co = checkout
-        cm = checkout --master
+        cm = checkout master
         st = status
         dc = diff --cached
 [color]
