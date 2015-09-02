@@ -10,6 +10,8 @@
   	dump = cat-file -p
 
         aa = add -A
+        cb = checkout -b
+        co = checkout
         ci = commit
         st = status
         dc = diff --cached
