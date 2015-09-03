@@ -11,6 +11,7 @@
   	dump = cat-file -p
 
         aa = add -A
+        br = branch
         cb = checkout -b
         ci = commit
         co = checkout
