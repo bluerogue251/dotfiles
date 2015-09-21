@@ -111,6 +111,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 export EDITOR=vim
+alias vi=vim
 
 alias git_delete_merged='git checkout master && git fetch origin && git pull && git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 alias c='clear'
@@ -120,4 +121,3 @@ alias speed_up_trackpoint='sudo udevadm control --reload-rules && sudo udevadm t
 alias ruby_server='ruby -run -e httpd . --port=8080'
 
 alias be='bundle exec'
-export DOCKER_HOST='tcp://localhost:4243'
