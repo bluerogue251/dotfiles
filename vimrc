@@ -41,10 +41,10 @@ autocmd QuickFixCmdPost *grep* cwindow
 function! TrimWhiteSpace()
     %s/\s\+$//e
 endfunction
-" autocmd FileWritePre    * :call TrimWhiteSpace()
-" autocmd FileAppendPre   * :call TrimWhiteSpace()
-" autocmd FilterWritePre  * :call TrimWhiteSpace()
-" autocmd BufWritePre     * :call TrimWhiteSpace()
+autocmd FileWritePre    * :call TrimWhiteSpace()
+autocmd FileAppendPre   * :call TrimWhiteSpace()
+autocmd FilterWritePre  * :call TrimWhiteSpace()
+autocmd BufWritePre     * :call TrimWhiteSpace()
 map <Leader><Leader> <C-S-^>
 
 " Allow these to filter command history based on already typed in words
@@ -67,3 +67,6 @@ noremap <silent> [b :bprevious<CR>
 noremap <silent> ]b :bnext<CR>
 noremap <silent> [B :bfirst<CR>
 noremap <silent> ]B :blast<CR>
+
+noremap <silent> <Leader>c :Dispatch! !cd ~/recombine/recombine-rails-suite && ./gen_all_ctags<cr>
+noremap <silent> <Leader>p :CtrlPTag<cr>
