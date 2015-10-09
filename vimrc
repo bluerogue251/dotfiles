@@ -21,7 +21,7 @@ set history=200
 set backspace=indent,eol,start
 set nomodeline
 
-let test#strategy = "dispatch"
+let test#strategy = "basic"
 nmap <silent> <leader>t :TestNearest<CR>
 nmap <silent> <leader>T :TestFile<CR>
 nmap <silent> <leader>a :TestSuite<CR>
@@ -41,10 +41,10 @@ autocmd QuickFixCmdPost *grep* cwindow
 function! TrimWhiteSpace()
     %s/\s\+$//e
 endfunction
-autocmd FileWritePre    * :call TrimWhiteSpace()
-autocmd FileAppendPre   * :call TrimWhiteSpace()
-autocmd FilterWritePre  * :call TrimWhiteSpace()
-autocmd BufWritePre     * :call TrimWhiteSpace()
+" autocmd FileWritePre    * :call TrimWhiteSpace()
+" autocmd FileAppendPre   * :call TrimWhiteSpace()
+" autocmd FilterWritePre  * :call TrimWhiteSpace()
+" autocmd BufWritePre     * :call TrimWhiteSpace()
 map <Leader><Leader> <C-S-^>
 
 " Allow these to filter command history based on already typed in words
