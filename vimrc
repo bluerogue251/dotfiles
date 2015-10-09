@@ -21,7 +21,7 @@ set history=200
 set backspace=indent,eol,start
 set nomodeline
 
-let test#strategy = "dispatch"
+let test#strategy = "basic"
 nmap <silent> <leader>t :TestNearest<CR>
 nmap <silent> <leader>T :TestFile<CR>
 nmap <silent> <leader>a :TestSuite<CR>
