@@ -71,8 +71,6 @@ noremap <silent> ]B :blast<CR>
 noremap <silent> <Leader>c :Dispatch! !cd ~/recombine/recombine-rails-suite && ./gen_all_ctags<cr>
 noremap <silent> <Leader>p :CtrlPTag<cr>
 
-" Easier return to normal(?) mode from terminal mode
-tnoremap <Leader>e <C-\><C-n>
 " Easier tab-key-based window navigation
 noremap <tab> <C-w>w
 
