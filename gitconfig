@@ -1,12 +1,14 @@
 [user]
 	name = Teddy Widom
 	email = theodore.widom@gmail.com
+	signingkey = EA4A3FD3
 [core]
 	autocrlf = false
 	safecrlf = true
 	excludesfile = ~/.gitignore
 [alias]
-	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+        hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+        gpg-hist = log --pretty=format:'%h %ad %G? | %s%d [%GK - %GS]' --graph --date=short
   	type = cat-file -t
   	dump = cat-file -p
 
@@ -22,3 +24,5 @@
 	ui = true
 [push]
 	default = simple
+[commit]
+	gpgsign = true
