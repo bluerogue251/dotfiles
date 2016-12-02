@@ -15,3 +15,5 @@ export DOCKER_CERT_PATH="/Users/teddy/.docker/machine/machines/default"
 export DOCKER_MACHINE_NAME="default"
 # Or, run this command to configure your shell for docker-machine:
 # eval $(docker-machine env default)
+
+alias ll="ls -lhAG"
