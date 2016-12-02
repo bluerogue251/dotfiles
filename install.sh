@@ -5,7 +5,7 @@ git pull --recurse-submodules
 git submodule update --recursive
 
 dir=`pwd`
-files_to_link="bashrc gemrc gitconfig gitignore irbrc rspec tmux.conf vim vimrc zshenv zshrc"
+files_to_link="gitconfig gitignore irbrc tmux.conf vim vimrc zshrc"
 
 for file in $files_to_link; do
   echo "Creating symlink from $dir/$file to ~/.$file in home directory."
